@@ -1,0 +1,23 @@
+model_name: "CFM_t"
+data:
+  data_path: "data/data_3000_points.txt"
+training:
+  ratio_test_val_train: 0.15
+  batch_size: 64
+  lr: 1.0e-3
+  n_epochs_max: 6000
+  n_epochs_min: 5000
+  use_masking: True
+  val_interval: 50
+model:
+  x_dim: 3
+  y_dim: 17
+  hidden_dim: 40
+  cond_dim: 32
+  num_blocks: 2
+  sigma_max: 1.0
+  schedule: "linear"
+  pred_target: "ot"
+inference:
+  steps_t: 100
+  solver: "heun"

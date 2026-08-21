@@ -1,0 +1,43 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+
+*.csv
+*.dat
+*.npy
+
+# Model Checkpoints (add your specific extensions if needed)
+*.pt
+*.pth
+
+# IDE / OS Files
+.vscode/
+.idea/
+.DS_Store
+
+checkpoints/
+tmp_configs/
+papers/
+train_old/
+logs/
+models_first/
+logs_eval/
+results/
+tests_old/
+
+run_evaluations_ablations.py
+run_evaluations.py
+plot_ablations.py
+plot_results.py
+run_ablations.py
+run_sweep.py

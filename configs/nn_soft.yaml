@@ -1,0 +1,15 @@
+model_name: "NN_Soft"
+data:
+  data_path: "data/data_3000_points.txt"
+training:
+  ratio_test_val_train: 0.15
+  batch_size: 64
+  lr: 1.0e-3
+  n_epochs_max: 2000
+  n_epochs_min: 750
+  weights_physics: 0.015
+  val_interval: 5
+model:
+  x_dim: 3
+  y_dim: 17
+  hidden_size: [130, 130]
